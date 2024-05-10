@@ -1,0 +1,32 @@
+alias: Detectar movimento e analisar imagem
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - sensor.sua_camera
+    from: null
+    to: null
+action:
+  - service: script.tirar_fotos
+    data: {}
+  - service: notify.sua_entidade_de_notificacao
+    data:
+      message: Analisando imagens...
+  - delay:
+      seconds: 5
+  - service: google_generative_ai_conversation.generate_content
+    data:
+      image_filename:
+        - /config/www/img1.jpg
+        - /config/www/img2.jpg
+        - /config/www/img3.jpg
+      prompt: >-
+        As imagens são do mesmo local e foram tiradas pelo acionamento de algum
+        movimento. Analise a foto e descreva de forma precisa e em poucas
+        palavras, o que está nas imagens que pode ter causado o disparo. No caso
+        de alguma pessoa, informar se é homem ou mulher, cor dos cabelos, roupas
+        e ação. 
+    response_variable: generated_content
+  - service: notify.sua_entidade_de_notificacao
+    data:
+      message: " {{ generated_content.text }} "
