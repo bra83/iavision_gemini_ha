@@ -1,0 +1,20 @@
+alias: tirar_fotos
+sequence:
+  - service: camera.snapshot
+    data:
+      filename: /config/www/img1.jpg
+    target:
+      entity_id: camera.interna_2
+  - delay:
+      seconds: 1
+  - service: camera.snapshot
+    data:
+      entity_id: camera.interna_2
+      filename: /config/www/img2.jpg
+  - delay:
+      seconds: 1
+  - service: camera.snapshot
+    data:
+      entity_id: camera.interna_2
+      filename: /config/www/img3.jpg
+mode: single
