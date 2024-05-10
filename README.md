@@ -12,9 +12,12 @@ Imagine a diferença: em vez de receber um simples "Movimento detectado na porta
 
 ## Como Funciona?
 * 1 - Movimento Detectado: Seu sensor de movimento, integrado ao Home Assistant, identifica uma atividade.
-* 2 - Captura Instantânea: A câmera de segurança associada ao sensor entra em ação, tirando três fotos em sequência rápida para garantir uma boa representação do evento.
-* 3 - Análise Inteligente: As imagens são enviadas para a API do Gemini, que usa algoritmos avançados de visão computacional para analisar a cena.
-* 4 - Notificação Detalhada: Você recebe uma notificação no seu celular, informando o que realmente aconteceu: "Um entregador deixou um pacote na porta" ou "Folhas caindo foram detectadas no jardim".
+* 2 - Captura Instantânea: A câmera de segurança associada ao sensor entra em ação, tirando três fotos em sequência rápida para garantir uma boa representação do evento.<br>
+<img src="https://github.com/bra83/iavision_gemini_ha/blob/main/img1.jpg" alt="Texto Alternativo">
+* 3 - Análise Inteligente: As imagens são enviadas para a API do Gemini, que usa algoritmos avançados de visão computacional para analisar a cena.<br>
+* 4 - Notificação Detalhada: Você recebe uma notificação no seu celular, informando o que realmente aconteceu: "Um entregador deixou um pacote na porta" ou "Folhas caindo foram detectadas no jardim".<br>
+
+<img src="https://github.com/bra83/iavision_gemini_ha/blob/main/ss_notification.jpg" alt="Texto Alternativo">
 
 ### Segurança Personalizada e Tranquilidade Total
 Este projeto não apenas aprimora a segurança, mas também oferece tranquilidade e personalização. Você pode ajustar a sensibilidade do sistema, personalizar as mensagens de notificação e integrar outras automações do Home Assistant.
