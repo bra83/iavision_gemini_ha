@@ -28,6 +28,9 @@ Este projeto não apenas aprimora a segurança, mas também oferece tranquilidad
 * Acesso à API do Gemini com chave de API válida.
 * Aplicativo móvel do Home Assistant configurado para receber notificações.
 
+## Integração
+A integração do Gemini com o Home assistant é feito com a instalação de um addon chamado Google Generative AI integration e posteriormente configurado com a API válida do usuário.
+
 ## Personalização
 * Ajuste o tempo de espera na automação (delay) de acordo com o tempo de resposta da API do Gemini.
 * Adapte o texto das notificações no arquivo automation.yaml às suas preferências.
@@ -62,4 +65,5 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request 
 Apesar de funcionar perfeitamente em meu servidor com o Home Assistant todo configurado, este projeto visa apenas ilustrar a possibilidade de funcionamento para a Imersão de IA da Alura + Google.<br>
 Para o projeto funcionar perfeitamente em seu computador, é necessário que o Home Assistant esteja instalado e configurado, assim como possuir câmeras de segurança e sensores de movimentos compatíveis com o Home Assistant.<br>
 
-<b>Documentação do Home Assistant</br> - https://www.home-assistant.io/docs/
+<b>Documentação do Home Assistant</b> - https://www.home-assistant.io/docs/<br>
+<b>Documentação do Google Generative AI integration</b> - https://www.home-assistant.io/integrations/google_generative_ai_conversation/
